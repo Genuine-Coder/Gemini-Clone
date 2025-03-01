@@ -1,7 +1,18 @@
 import React from 'react'
+import './ChatSection.css'
+import Mode from '../Mode/Mode'
 
 export default function ChatSection() {
   return (
-    <div>ChatSection</div>
+    <div className="chatSection">
+        <div className="topSection">
+            
+        </div>
+        <div className="bottomSection">
+
+        </div>
+        
+    </div>
+
   )
 }

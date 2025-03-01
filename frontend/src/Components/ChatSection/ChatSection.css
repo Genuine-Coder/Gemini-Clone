@@ -1,0 +1,6 @@
+.chatSection{
+    background-color: var(--background-color);
+    color: var(--color);
+    flex: 1;
+    height: 100vh;
+}

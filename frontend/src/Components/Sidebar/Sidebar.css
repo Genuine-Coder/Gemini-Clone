@@ -2,8 +2,8 @@
     height: 100vh;
     padding: 20px 10px;
     overflow: auto;
-    background-color: rgb(49, 47, 47);
-    color: white;
+    background-color: var(--background-color);
+    color: var(--color);
     font-size: 20px;
     
 
@@ -11,7 +11,7 @@
 .sidebar svg{
     width: 30px;
     height: 30px;
-    color: white;
+    color: var(--color);
 }
 .newChat{
     display: flex;
@@ -51,8 +51,13 @@
 #ham{
     cursor: pointer;
     margin-left: 10px;
+    padding: 4px;
+    border-radius: 20px;
 }
 #ham:hover{
 color: rgb(29, 27, 26);
   cursor: pointer;
+  background-color: beige;
+  transition: all 0.5s;
+  
 }

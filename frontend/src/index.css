@@ -9,3 +9,18 @@
 #root{
   display: flex;
 }
+.darkMode{
+  --color:rgb(245, 245, 245);
+  --background-color:black;
+  --btn-background-color: white;
+  --btn-color:black;
+  
+}
+
+.lightMode{
+  --color:black;
+  --background-color:white;
+  --btn-background-color: black;
+  --btn-color:white;
+  
+}
