@@ -2,8 +2,15 @@ import React from "react";
 import "./ChatSection.css";
 import Mode from "../Mode/Mode";
 import { LuSendHorizontal } from "react-icons/lu";
+import { useContext } from "react";
+import { dataCotext } from "../../context/UserContext";
+import run from "../../gemini";
+
+
 
 export default function ChatSection() {
+
+  let {sent} = useContext(dataCotext);
   return (
     <div className="chatSection">
       <div className="topSection">
@@ -16,7 +23,10 @@ export default function ChatSection() {
       <div className="bottomSection">
         <div className="bottom">
         <input type="text" placeholder="enter your prompt.." id="inp"></input>
-        <button id="sendBtn"> <LuSendHorizontal/></button>
+        <button id="sendBtn" onClick={()=>{
+          // run("Hello , How was your day today ?")
+          sent();
+        }}> <LuSendHorizontal/></button>
         <Mode/>
         </div>
         
