@@ -6,8 +6,8 @@ import UserContext, { dataCotext } from "./context/UserContext";
 
 function App() {
   
-let data = useContext(dataCotext);
-console.log(data);
+// let data = useContext(dataCotext);
+// console.log(data);
   return (
     <>
       <Sidebar/> 
